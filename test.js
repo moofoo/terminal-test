@@ -56,7 +56,7 @@ test("move cursor to previous line", t => {
     t.is(toString(terminalJS), "boz\n   bar\n      baz");
 
 /*
-    Three lines are output, the cursor goes up two, and
+    Three lines are output (two \n), the cursor goes up two, and
     writes 'boz' over 'foo'. Final string output
     should be: "boz\n   bar\n      baz"
 
